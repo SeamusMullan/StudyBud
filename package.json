@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:StudyBud_Frontend\" \"npm run dev:StudyBud_Backend\"",
+    "dev:frontend": "cd StudyBud_Frontend && npm run dev",
+    "dev:backend": "cd StudyBud_Backend && npm run dev",
+    "build": "concurrently \"npm run build:StudyBud_Frontend\" \"npm run build:StudyBud_Backend\"",
+    "build:frontend": "cd StudyBud_Frontend && npm run build",
+    "build:backend": "cd StudyBud_Backend && npm run build",
+    "start": "concurrently \"npm run start:StudyBud_Frontend\" \"npm run start:StudyBud_Backend\"",
+    "start:frontend": "cd StudyBud_Frontend && npm run start",
+    "start:backend": "cd StudyBud_Backend && npm run start"
+  }
+}
